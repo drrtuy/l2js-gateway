@@ -4,7 +4,6 @@
  * Module dependencies.
  */
 
-var app = require('../app');
 var debug = require('debug')('l2js-gateway:server');
 var http = require('http');
 const WebSocket = require('ws');
@@ -14,7 +13,6 @@ const WebSocket = require('ws');
  */
 
 var port = normalizePort(process.env.PORT || '8080');
-app.set('port', port);
 
 /**
  * Create HTTP server.
